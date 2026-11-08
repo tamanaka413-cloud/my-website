@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>お問い合わせ・無料相談｜N²</title>
+<meta name="description" content="整骨院・パーソナルジム・学習塾の地域集客支援に関する無料相談はこちらから。フォームまたはLINEでお気軽にご相談ください。">
+</head>
+<body>
+<!-- ── MOBILE NAV DRAWER ── -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="pain.html" onclick="closeMobileNav()">お悩み</a>
+  <a href="results.html" onclick="closeMobileNav()">成果</a>
+  <a href="approach.html" onclick="closeMobileNav()">アプローチ</a>
+  <a href="industries.html" onclick="closeMobileNav()">業種別支援</a>
+  <a href="reasons.html" onclick="closeMobileNav()">選ばれる理由</a>
+  <a href="flow.html" onclick="closeMobileNav()">流れ</a>
+  <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
+  <div class="mobile-nav-cta">
+    <a href="contact.html" class="btn-primary" onclick="closeMobileNav()" style="justify-content:center;width:100%">
+      無料相談する
+      <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>N²</a>
+  <ul class="nav-links">
+    <li><a href="pain.html">お悩み</a></li>
+    <li><a href="results.html">成果</a></li>
+    <li><a href="approach.html">アプローチ</a></li>
+    <li><a href="industries.html">業種別支援</a></li>
+    <li><a href="reasons.html">選ばれる理由</a></li>
+    <li><a href="flow.html">流れ</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-cta">無料相談する</a>
+    <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="index.html">TOP</a><span class="sep">/</span><span>お問い合わせ</span></div>
+    <span class="eyebrow">CONTACT</span>
+    <h1 class="page-title">まず、話しましょう。</h1>
+    <p class="page-lead">無料相談では、営業トークはしません。現状をヒアリングし、何が課題か、何から始めればいいかをお伝えします。合わないと判断されたらそれで構いません。話すだけでも、気づきがある30分にします。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-block-inner">
+    <div class="contact-layout">
+      <div class="reveal">
+        <p class="contact-body-text">
+          Googleマップ・SNS・動画を連動させた地域集客支援をおこなっています。フォームまたはLINEから、お気軽にご相談ください。
+        </p>
+
+        <div class="contact-line-block">
+          <span class="contact-line-label">LINEでも相談できます</span>
+          <div class="line-qr-wrap">
+            <!-- QR画像: line_qr.png を同じフォルダに置くと表示されます -->
+            <div class="line-qr-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="5" y="5" width="3" height="3"/><rect x="16" y="5" width="3" height="3"/><rect x="5" y="16" width="3" height="3"/><path d="M14 14h3v3M14 17h3v3M17 14v3"/></svg>
+              QRコード
+            </div>
+            <div class="line-qr-info">
+              <a href="#" class="contact-line-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="white"><path d="M9 1C4.58 1 1 4.13 1 8.01c0 3.39 2.69 6.24 6.35 6.85.47.09 1.11.27 1.27.62.14.32.09.82.04 1.14l-.2 1.23c-.06.35-.28 1.37 1.2.75 1.49-.63 8.03-4.73 10.96-8.1A6.9 6.9 0 0017 8.01C17 4.13 13.42 1 9 1z"/></svg>
+                LINEで無料相談する
+              </a>
+              <p class="contact-line-note">QRを読み取るか、上のボタンから追加できます<br>平日 10:00〜18:00 ／ 通常1営業日以内に返信</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <label for="f-name">お名前</label>
+            <input type="text" id="f-name" placeholder="山田 太郎" required>
+          </div>
+          <div class="form-row">
+            <label for="f-biz">業種・店舗名</label>
+            <select id="f-biz">
+              <option value="">選択してください</option>
+              <option>整骨院・接骨院</option>
+              <option>パーソナルジム</option>
+              <option>学習塾・個別指導塾</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="f-email">メールアドレス</label>
+            <input type="email" id="f-email" placeholder="example@mail.com" required>
+          </div>
+          <div class="form-row">
+            <label for="f-tel">電話番号（任意）</label>
+            <input type="tel" id="f-tel" placeholder="090-0000-0000">
+          </div>
+          <div class="form-row">
+            <label for="f-msg">お悩み・ご相談内容</label>
+            <textarea id="f-msg" placeholder="例：Googleマップの順位が低く、新患が増えていません。Instagramも始めたいが何から手を付ければいいかわからない状況です。"></textarea>
+          </div>
+          <label class="form-consent"><input type="checkbox" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意の上、送信します。</span></label>
+          <button type="submit" class="btn-form-submit">
+            無料相談を申し込む
+            <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </button>
+          <p class="form-note">送信後、1営業日以内にご連絡します。無理な営業は一切しません。</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name"><span class="dot"></span>N²</div>
+      <div class="footer-brand-tagline">ニーズの先に、新しい気づきを。<br>地域集客パートナー</div>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="pain.html">お悩み</a></li>
+      <li><a href="results.html">成果</a></li>
+      <li><a href="approach.html">アプローチ</a></li>
+      <li><a href="industries.html">業種別支援</a></li>
+      <li><a href="reasons.html">選ばれる理由</a></li>
+      <li><a href="flow.html">流れ</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="about.html">運営者情報</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 N². ALL RIGHTS RESERVED.</span>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="float-cta" id="floatCta">
+  <a href="contact.html" class="float-btn line">
+    <svg viewBox="0 0 18 18" fill="white" width="16" height="16"><path d="M9 1C4.58 1 1 4.13 1 8.01c0 3.39 2.69 6.24 6.35 6.85.47.09 1.11.27 1.27.62.14.32.09.82.04 1.14l-.2 1.23c-.06.35-.28 1.37 1.2.75 1.49-.63 8.03-4.73 10.96-8.1A6.9 6.9 0 0017 8.01C17 4.13 13.42 1 9 1z"/></svg>
+    LINE相談
+  </a>
+  <a href="contact.html" class="float-btn primary">
+    無料相談する
+    <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

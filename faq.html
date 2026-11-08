@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>よくある質問｜N²</title>
+<meta name="description" content="料金、効果が出る期間、契約期間など、地域集客支援に関するよくある質問にお答えします。">
+</head>
+<body>
+<!-- ── MOBILE NAV DRAWER ── -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="pain.html" onclick="closeMobileNav()">お悩み</a>
+  <a href="results.html" onclick="closeMobileNav()">成果</a>
+  <a href="approach.html" onclick="closeMobileNav()">アプローチ</a>
+  <a href="industries.html" onclick="closeMobileNav()">業種別支援</a>
+  <a href="reasons.html" onclick="closeMobileNav()">選ばれる理由</a>
+  <a href="flow.html" onclick="closeMobileNav()">流れ</a>
+  <a href="faq.html" class="active" onclick="closeMobileNav()">FAQ</a>
+  <div class="mobile-nav-cta">
+    <a href="contact.html" class="btn-primary" onclick="closeMobileNav()" style="justify-content:center;width:100%">
+      無料相談する
+      <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>N²</a>
+  <ul class="nav-links">
+    <li><a href="pain.html">お悩み</a></li>
+    <li><a href="results.html">成果</a></li>
+    <li><a href="approach.html">アプローチ</a></li>
+    <li><a href="industries.html">業種別支援</a></li>
+    <li><a href="reasons.html">選ばれる理由</a></li>
+    <li><a href="flow.html">流れ</a></li>
+    <li><a href="faq.html" class="active">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-cta">無料相談する</a>
+    <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="index.html">TOP</a><span class="sep">/</span><span>よくある質問</span></div>
+    <span class="eyebrow">FAQ</span>
+    <h1 class="page-title">よくある質問</h1>
+    <p class="page-lead">料金、効果が出るまでの期間、契約期間など、よくいただくご質問にお答えします。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-block-inner">
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">料金はどのくらいかかりますか？</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>支援内容・業種・地域によって異なります。まずは無料相談でヒアリングし、最適なプランとともにお見積りをご提示します。広告費は別途かかりません（広告運用をご希望の場合は追加でご相談ください）。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">効果が出るまでどのくらいかかりますか？</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>Googleマップの順位改善は一般的に3〜6ヶ月が目安です。口コミが増えるにつれて加速します。SNSは継続投稿により3ヶ月目以降にフォロワーと問い合わせが増加する傾向にあります。業種・競合状況により異なりますが、目安となる期間を事前にご説明します。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">動画撮影は自分で用意が必要ですか？</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>まずはご希望や課題をお伺いした上で、最適な構成をご提案いたします。あわせて、ご予算感に応じた制作内容・運用内容をご提案させていただきますので、お気軽にご相談ください。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">1店舗だけでも依頼できますか？</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>はい、1店舗から対応しています。まずは1店舗でお試しいただき、成果を確認してから他店舗へ展開いただくオーナーの方も多くいらっしゃいます。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">契約期間の縛りはありますか？</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>最低契約期間は3ヶ月です。Googleマップ改善など効果が出るまでに一定の時間が必要なため、3ヶ月を最小単位としています。以降は月次での継続・解約を選択いただけます。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">他の業者に断られた・失敗した経験があります。</span>
+          <span class="faq-q-icon"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8"/></svg></span>
+        </div>
+        <div class="faq-a">
+          <p>よくご相談いただく内容です。「マップ対策だけ依頼したが、順位が上がっても問い合わせが来なかった」という声を多くいただきます。私たちは地図・SNS・動画を連動させた上で成果につなげる設計をするため、単一施策との根本的な違いをご説明できます。まずは現状を聞かせてください。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-band reveal" style="margin-top:56px">
+      <div class="cta-band-title">他にも気になることがあれば、<br>無料相談で直接お聞きください。</div>
+      <div class="cta-band-actions">
+        <a href="contact.html" class="btn-cta-white">
+          無料相談する
+          <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name"><span class="dot"></span>N²</div>
+      <div class="footer-brand-tagline">ニーズの先に、新しい気づきを。<br>地域集客パートナー</div>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="pain.html">お悩み</a></li>
+      <li><a href="results.html">成果</a></li>
+      <li><a href="approach.html">アプローチ</a></li>
+      <li><a href="industries.html">業種別支援</a></li>
+      <li><a href="reasons.html">選ばれる理由</a></li>
+      <li><a href="flow.html">流れ</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="about.html">運営者情報</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 N². ALL RIGHTS RESERVED.</span>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="float-cta" id="floatCta">
+  <a href="contact.html" class="float-btn line">
+    <svg viewBox="0 0 18 18" fill="white" width="16" height="16"><path d="M9 1C4.58 1 1 4.13 1 8.01c0 3.39 2.69 6.24 6.35 6.85.47.09 1.11.27 1.27.62.14.32.09.82.04 1.14l-.2 1.23c-.06.35-.28 1.37 1.2.75 1.49-.63 8.03-4.73 10.96-8.1A6.9 6.9 0 0017 8.01C17 4.13 13.42 1 9 1z"/></svg>
+    LINE相談
+  </a>
+  <a href="contact.html" class="float-btn primary">
+    無料相談する
+    <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

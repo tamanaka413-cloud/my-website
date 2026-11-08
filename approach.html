@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>私たちのアプローチ｜Googleマップ・SNS・動画を連動させる｜N²</title>
+<meta name="description" content="Googleマップ対策・SNS運用・ショート動画制作を連動させ、来店・問い合わせにつなげる仕組みを解説。">
+</head>
+<body>
+<!-- ── MOBILE NAV DRAWER ── -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="pain.html" onclick="closeMobileNav()">お悩み</a>
+  <a href="results.html" onclick="closeMobileNav()">成果</a>
+  <a href="approach.html" class="active" onclick="closeMobileNav()">アプローチ</a>
+  <a href="industries.html" onclick="closeMobileNav()">業種別支援</a>
+  <a href="reasons.html" onclick="closeMobileNav()">選ばれる理由</a>
+  <a href="flow.html" onclick="closeMobileNav()">流れ</a>
+  <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
+  <div class="mobile-nav-cta">
+    <a href="contact.html" class="btn-primary" onclick="closeMobileNav()" style="justify-content:center;width:100%">
+      無料相談する
+      <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>N²</a>
+  <ul class="nav-links">
+    <li><a href="pain.html">お悩み</a></li>
+    <li><a href="results.html">成果</a></li>
+    <li><a href="approach.html" class="active">アプローチ</a></li>
+    <li><a href="industries.html">業種別支援</a></li>
+    <li><a href="reasons.html">選ばれる理由</a></li>
+    <li><a href="flow.html">流れ</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-cta">無料相談する</a>
+    <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="index.html">TOP</a><span class="sep">/</span><span>私たちのアプローチ</span></div>
+    <span class="eyebrow">OUR APPROACH</span>
+    <h1 class="page-title">3つを別々に運用せず、連動させてはじめて来店が増える</h1>
+    <p class="page-lead" style="max-width:100%;">Googleマップ対策・SNS運用・動画制作。それぞれ単体で発注すると、効果が分断されてしまいます。私たちは3つを設計段階から連動させ、来店・問い合わせにつなげます。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-block-inner">
+    <div class="approach-diagram">
+      <div class="approach-node reveal reveal-delay-1">
+        <div class="approach-node-icon">
+          <svg viewBox="0 0 22 22"><circle cx="11" cy="9" r="3.5"/><path d="M11 2C7.134 2 4 5.134 4 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.866-3.134-7-7-7z"/></svg>
+        </div>
+        <div class="approach-node-name">Googleマップ最適化</div>
+        <div class="approach-node-desc">検索上位に表示されるための情報整備・口コミ対策。「今すぐ行きたい」ユーザーに的確にリーチします。</div>
+        <div class="approach-node-tags">
+          <span class="tag">検索対策</span>
+          <span class="tag">口コミ収集</span>
+          <span class="tag">写真最適化</span>
+        </div>
+      </div>
+
+      <div class="approach-arrow reveal">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <div class="approach-node reveal reveal-delay-2">
+        <div class="approach-node-icon">
+          <svg viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="4"/><circle cx="11" cy="11" r="3.5"/><circle cx="16" cy="6" r="1"/></svg>
+        </div>
+        <div class="approach-node-name">SNS運用<br>（Instagram / TikTok）</div>
+        <div class="approach-node-desc">認知拡大と信頼構築。来院・来店したくなる雰囲気・実績・スタッフの人柄を継続発信します。</div>
+        <div class="approach-node-tags">
+          <span class="tag">投稿代行</span>
+          <span class="tag">ブランド設計</span>
+          <span class="tag">分析改善</span>
+        </div>
+      </div>
+
+      <div class="approach-arrow reveal">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <div class="approach-node reveal reveal-delay-3">
+        <div class="approach-node-icon">
+          <svg viewBox="0 0 22 22"><rect x="2" y="6" width="14" height="12" rx="1.5"/><path d="M16 9l6-3v10l-6-3"/></svg>
+        </div>
+        <div class="approach-node-name">ショート動画制作</div>
+        <div class="approach-node-desc">15〜60秒の動画で店舗の雰囲気を伝える。初見の不安を取り除き、予約・問い合わせへの心理障壁を下げます。</div>
+        <div class="approach-node-tags">
+          <span class="tag">Reels制作</span>
+          <span class="tag">TikTok動画</span>
+          <span class="tag">店舗PR</span>
+        </div>
+      </div>
+
+      <div class="approach-center reveal">
+        <div class="approach-center-left">
+          <span class="approach-center-tag">OUTCOME</span>
+          <div class="approach-center-title">3つが連動することで、<br>「知る」「信頼する」「来店する」<br>という流れが自然に生まれます。</div>
+        </div>
+        <div class="approach-center-right">
+          <div class="approach-result-chip">
+            <div class="arc-n">来店数</div>
+            <div class="arc-l">UP</div>
+          </div>
+          <div class="approach-result-chip">
+            <div class="arc-n">問い合わせ</div>
+            <div class="arc-l">UP</div>
+          </div>
+          <div class="approach-result-chip">
+            <div class="arc-n">体験予約</div>
+            <div class="arc-l">UP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-band reveal" style="margin-top:24px">
+      <div class="cta-band-title">3つの連動設計を、<br>自分のお店ではどう活かせるか相談したい。</div>
+      <div class="cta-band-actions">
+        <a href="contact.html" class="btn-cta-white">
+          無料相談する
+          <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+        <a href="industries.html" class="btn-cta-outline">業種別の支援を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name"><span class="dot"></span>N²</div>
+      <div class="footer-brand-tagline">ニーズの先に、新しい気づきを。<br>地域集客パートナー</div>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="pain.html">お悩み</a></li>
+      <li><a href="results.html">成果</a></li>
+      <li><a href="approach.html">アプローチ</a></li>
+      <li><a href="industries.html">業種別支援</a></li>
+      <li><a href="reasons.html">選ばれる理由</a></li>
+      <li><a href="flow.html">流れ</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="about.html">運営者情報</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 N². ALL RIGHTS RESERVED.</span>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="float-cta" id="floatCta">
+  <a href="contact.html" class="float-btn line">
+    <svg viewBox="0 0 18 18" fill="white" width="16" height="16"><path d="M9 1C4.58 1 1 4.13 1 8.01c0 3.39 2.69 6.24 6.35 6.85.47.09 1.11.27 1.27.62.14.32.09.82.04 1.14l-.2 1.23c-.06.35-.28 1.37 1.2.75 1.49-.63 8.03-4.73 10.96-8.1A6.9 6.9 0 0017 8.01C17 4.13 13.42 1 9 1z"/></svg>
+    LINE相談
+  </a>
+  <a href="contact.html" class="float-btn primary">
+    無料相談する
+    <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
