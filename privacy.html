@@ -1,76 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>プライバシーポリシー｜N²（エヌスクエア）</title>
-<meta name="description" content="N²（エヌスクエア）のプライバシーポリシー。個人情報の取得・利用目的・管理についてご案内します。">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Inter:wght@300;400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.policy{padding:150px 0 var(--gap);max-width:780px;margin:0 auto}
+.policy h1{font-family:var(--display);font-size:clamp(28px,4vw,40px);margin-bottom:20px}
+.policy .intro{font-size:14px;color:var(--body);margin-bottom:48px}
+.policy h2{font-family:var(--display);font-size:19px;margin:44px 0 12px;padding-left:14px;border-left:4px solid var(--accent);line-height:1.6}
+.policy p,.policy li{font-size:14px;color:var(--body);line-height:2.1}
+.policy ul{margin:8px 0 0 1.4em}
+.policy .pl{color:var(--accent-deep);font-weight:700}
+.policy-meta{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--mid);line-height:2}
+</style>
 </head>
-<body>
-<!-- ── MOBILE NAV DRAWER ── -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="pain.html" onclick="closeMobileNav()">お悩み</a>
-  <a href="results.html" onclick="closeMobileNav()">成果</a>
-  <a href="approach.html" onclick="closeMobileNav()">アプローチ</a>
-  <a href="industries.html" onclick="closeMobileNav()">業種別支援</a>
-  <a href="reasons.html" onclick="closeMobileNav()">選ばれる理由</a>
-  <a href="flow.html" onclick="closeMobileNav()">流れ</a>
-  <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
-  <div class="mobile-nav-cta">
-    <a href="contact.html" class="btn-primary" onclick="closeMobileNav()" style="justify-content:center;width:100%">
-      無料相談する
-      <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-    </a>
-  </div>
-</div>
+<body id="top">
+<header class="header">
+  <a href="index.html" class="logo"><img src="logo-full.svg" alt="N²" class="logo-full"></a>
+  <button class="burger" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav">
+    <a href="index.html#about">ABOUT</a>
+    <a href="index.html#business">BUSINESS</a>
+    <a href="index.html#company">COMPANY</a>
+    <a href="index.html#contact" class="nav-contact">CONTACT</a>
+  </nav>
+</header>
+<main><div class="wrap"><div class="policy">
+<div class="label">PRIVACY POLICY</div>
+<h1>プライバシーポリシー</h1>
+<p class="intro">N²（エヌスクエア）（以下「当社」）は、お客様の個人情報を大切に取り扱います。</p>
 
-<!-- ── NAV ── -->
-<nav class="nav" id="mainNav">
-  <a href="index.html" class="nav-logo"><span class="dot"></span>N²</a>
-  <ul class="nav-links">
-    <li><a href="pain.html">お悩み</a></li>
-    <li><a href="results.html">成果</a></li>
-    <li><a href="approach.html">アプローチ</a></li>
-    <li><a href="industries.html">業種別支援</a></li>
-    <li><a href="reasons.html">選ばれる理由</a></li>
-    <li><a href="flow.html">流れ</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-  </ul>
-  <div class="nav-right">
-    <a href="contact.html" class="nav-cta">無料相談する</a>
-    <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="メニュー">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<section class="page-header">
-  <div class="page-header-inner">
-    <div class="breadcrumb"><a href="index.html">TOP</a><span class="sep">/</span><span>プライバシーポリシー</span></div>
-    <span class="eyebrow">PRIVACY POLICY</span>
-    <h1 class="page-title">プライバシーポリシー</h1>
-    <p class="page-lead">N²（エヌスクエア）（以下「当社」）は、お客様の個人情報を大切に取り扱います。</p>
-  </div>
-</section>
-
-<section class="section-block">
-  <div class="section-block-inner">
-    <div class="policy-body">
-      <h2>1. 事業者情報</h2>
+      <h2 style="margin-top:0">1. 事業者情報</h2>
       <p>屋号：N²（エヌスクエア）<br>代表者：中條 稔久</p>
 
       <h2>2. 取得する個人情報</h2>
-      <p>当社は、当サイトのお問い合わせフォームやLINEを通じて、次の情報を取得します。</p>
+      <p>当社は、当サイトのお問い合わせフォームを通じて、次の情報を取得します。</p>
       <ul>
         <li>お名前</li>
         <li>業種・店舗名</li>
         <li>メールアドレス</li>
         <li>電話番号（任意）</li>
         <li>ご相談内容</li>
-        <li>LINEでご相談いただいた場合の表示名・メッセージ内容</li>
       </ul>
 
       <h2>3. 利用目的</h2>
@@ -97,7 +70,7 @@
       <p>当社は、個人情報の漏えい、滅失、毀損を防ぐため、アクセス管理をはじめとした必要かつ適切な安全管理措置を講じます。</p>
 
       <h2>7. 外部サービス・Cookieについて</h2>
-      <p>当サイトでは、表示のためにGoogle Fontsを利用しており、ページの閲覧時にGoogleのサーバーへアクセスが発生する場合があります。また、LINEでのご相談には、LINEヤフー株式会社が提供するLINEを利用します。各サービスにおける情報の取り扱いは、それぞれの提供事業者のプライバシーポリシーに従います。</p>
+      <p>当サイトでは、表示のためにGoogle Fontsを利用しており、ページの閲覧時にGoogleのサーバーへアクセスが発生する場合があります。各サービスにおける情報の取り扱いは、提供事業者のプライバシーポリシーに従います。</p>
       <p>今後、アクセス解析ツールなどを導入する場合は、Cookie等を利用して利用状況を収集することがあります。この情報から個人を特定することはありません。導入時には本ポリシーにその旨を記載します。</p>
 
       <h2>8. 開示・訂正・利用停止等のご請求</h2>
@@ -107,54 +80,22 @@
       <p>当社は、法令の変更や運用の見直しに応じて、本ポリシーを予告なく改定することがあります。改定後の内容は、当サイトに掲載した時点から効力を持ちます。</p>
 
       <h2>10. お問い合わせ窓口</h2>
-      <p>個人情報の取り扱いに関するお問い合わせは、<a href="contact.html" style="color:var(--accent-deep);font-weight:700;">お問い合わせフォーム</a>、またはLINEよりご連絡ください。</p>
+      <p>個人情報の取り扱いに関するお問い合わせは、<a href="index.html#contact" class="pl">お問い合わせフォーム</a>よりご連絡ください。</p>
 
       <div class="policy-meta">
         制定日：2026年11月3日<br>
         事業者：N²（エヌスクエア）　代表者：中條 稔久
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════ FOOTER ════════════════ -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand-name"><span class="dot"></span>N²</div>
-      <div class="footer-brand-tagline">ニーズの先に、新しい気づきを。<br>地域集客パートナー</div>
-    </div>
-    <ul class="footer-nav">
-      <li><a href="index.html">TOP</a></li>
-      <li><a href="pain.html">お悩み</a></li>
-      <li><a href="results.html">成果</a></li>
-      <li><a href="approach.html">アプローチ</a></li>
-      <li><a href="industries.html">業種別支援</a></li>
-      <li><a href="reasons.html">選ばれる理由</a></li>
-      <li><a href="flow.html">流れ</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="about.html">運営者情報</a></li>
-      <li><a href="privacy.html">プライバシーポリシー</a></li>
-    </ul>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2026 N². ALL RIGHTS RESERVED.</span>
-  </div>
-</footer>
-
-<!-- FLOATING CTA -->
-<div class="float-cta" id="floatCta">
-  <a href="contact.html" class="float-btn line">
-    <svg viewBox="0 0 18 18" fill="white" width="16" height="16"><path d="M9 1C4.58 1 1 4.13 1 8.01c0 3.39 2.69 6.24 6.35 6.85.47.09 1.11.27 1.27.62.14.32.09.82.04 1.14l-.2 1.23c-.06.35-.28 1.37 1.2.75 1.49-.63 8.03-4.73 10.96-8.1A6.9 6.9 0 0017 8.01C17 4.13 13.42 1 9 1z"/></svg>
-    LINE相談
-  </a>
-  <a href="contact.html" class="float-btn primary">
-    無料相談する
-    <svg viewBox="0 0 14 14" stroke="currentColor" fill="none" stroke-width="1.8" width="14" height="14"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-  </a>
-</div>
-
-<script src="script.js"></script>
+    
+</div></div></main>
+<footer class="footer"><div class="wrap">
+  <span>© 2026 N². ALL RIGHTS RESERVED.</span>
+  <nav><a href="privacy.html">PRIVACY POLICY</a><a href="#top">SCROLL UP ↑</a></nav>
+</div></footer>
+<script>
+document.documentElement.classList.add('js');
+const b=document.querySelector('.burger'),n=document.querySelector('.nav');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
 </body>
 </html>
