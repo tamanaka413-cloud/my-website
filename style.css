@@ -333,3 +333,10 @@ section{padding:var(--gap) 0 0}
 .gform-note{margin-top:14px;font-size:12px;color:var(--mid);line-height:1.9}
 .gform-note a{text-decoration:underline;color:var(--accent-deep)}
 @media (max-width:820px){.gform iframe{min-height:1000px}}
+/* フォーム：入力から送信ボタンまで1画面で見られる高さに */
+.gform iframe{height:1250px;min-height:0}
+.gform-open{display:none}
+@media (max-width:820px){
+  .gform iframe{height:1650px;min-height:0}
+  .gform-open{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;padding:16px;border-radius:100px;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+}
